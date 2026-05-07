@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    position: fixed;
+    top: 0.75rem;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    height: 54px;
+    padding: 0 0.75rem;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(10px);
+  }
+
+  header ul {
+    justify-content: center;
+    gap: 0.1rem;
+  }
+
+  header ul li a {
+    padding: 1rem;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  header ul li.on a::after {
+    right: 0.2rem;
+    width: 6px;
+    height: 6px;
+  }
+
+  h2 {
+    padding-left: 1rem;
+    margin: 5rem 0 1.25rem;
+    font-size: 2.15rem;
+  }
+
+  .main {
+    height: auto;
+    padding: 9.5rem 1rem 10rem;
+    align-items: flex-start;
+  }
+
+  .main > div {
+    width: 100%;
+  }
+
+  .main h1 {
+    padding: 0;
+    font-size: 5rem;
+    line-height: 0.92;
+    word-break: keep-all;
+  }
+
+  .main h1 + h1 {
+    margin-top: 0.85rem;
+  }
+
+  .main h1:nth-child(3) {
+    background-position: right bottom;
+    background-size: 92px auto;
+    padding-bottom: 1.8rem;
+  }
+
+  .disabled-video {
+    display: block;
+    width: calc(100% - 2rem);
+    height: auto;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    max-height: 70vh;
+  }
+
+  .disabled-video-overlay {
+    gap: 0.65rem;
+    letter-spacing: 0.1em;
+  }
+
+  .flex {
+    width: 100%;
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tabmenu {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .tabmenu li {
+    width: 100%;
+    height: 96px;
+    margin-bottom: 0;
+  }
+
+  .tabmenu span {
+    margin: auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .tabitem {
+    width: 100%;
+  }
+
+  .tabitem > * {
+    position: static;
+    display: none;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .tabitem > * > div:nth-child(1),
+  .tabitem > * > div:nth-child(2) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .tabitem iframe {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .tabitem .vision iframe {
+    width: min(100%, 320px);
+    aspect-ratio: 9 / 16;
+  }
+
+  .live {
+    font-size: 1.2rem;
+    gap: 0.35rem;
+    top: 0.12rem;
+  }
+
+  .live::before {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .tabitem h3 {
+    font-size: 2.2rem;
+  }
+
+  .tabitem li {
+    font-size: 0.95rem;
+  }
+
+  .tabitem .syn {
+    height: auto;
+  }
+
+  .tabitem .syn p {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  .unitem {
+    width: 100%;
+    margin: 5rem auto;
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .unitem h2 {
+    margin: 0 0 0.5rem;
+    padding-left: 0;
+  }
+
+  .unitem .unitem-dummy {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .script {
+    padding: 0 1rem;
+  }
+
+  .script h1 {
+    padding: 0;
+    font-size: 4.6rem;
+  }
+
+  .script h3 {
+    padding: 1rem 0 1.5rem;
+    font-size: 1rem;
+  }
+  .script input {
+    width: 100%;
+  }
+
+  .script .cc {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .script .cc h4 {
+    font-size: 1.1rem;
+    word-break: break-all;
+  }
+
+  footer {
+    padding: 2rem 1rem 3rem;
+    font-size: 0.85rem;
+  }
+}
