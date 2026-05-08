@@ -27,7 +27,7 @@ $(function () {
 
     if ($target.length === 0) {
       return;
-    }
+    } 
 
     if (targetSelector === "#about") {
       const $video = $target.find("iframe").first();
