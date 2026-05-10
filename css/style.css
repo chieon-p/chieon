@@ -37,7 +37,7 @@ h2 {
   font-style: italic;
   font-weight: 700;
   font-family: noto;
-  color: #ffe744;
+  color: #D8B56A;
   padding-left: 3rem;
   font-size: 3rem;
   margin: 10rem 0 2rem;
@@ -64,7 +64,7 @@ span {
   font-style: italic;
   font-weight: 700;
   font-family: noto;
-  color: #ffe744;
+  color: #E2C27A;
 }
 
 /* header */
@@ -279,7 +279,7 @@ header ul li.on a::after {
 }
 .script button {
   padding: 1rem;
-  background-color: #ffe744;
+  background-color: #E2C27A;
   border: none;
   cursor: pointer;
   outline: none;
@@ -301,7 +301,7 @@ header ul li.on a::after {
 }
 .script p {
   margin: clamp(1rem, 2.5vh, 2rem) 0;
-  color: #ffe744;
+  color: #E2C27A;
 }
 .script .cc {
   display: flex;
@@ -319,4 +319,11 @@ header ul li.on a::after {
 footer {
   text-align: center;
   padding: 1.4rem 0 2rem;
+}
+.business-card-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    display:block;
 }
